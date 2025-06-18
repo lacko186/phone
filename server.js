@@ -42,7 +42,7 @@ try{
     res.json(TelekomPhone);
     res.status(200);
 }catch(err){
-    console.error("adatbetöltési hiba");
+    console.error("adatbetöltési hiba", err);
     res.status(400);
 }
 });
@@ -59,3 +59,8 @@ app.post('/phones', (req,res)=>{
         res.status(500);
     }
 });
+
+
+app.listen(port, ()=>{
+    console.log(`Szerver elindult, az adatok elérhetőek a http://localhost:${port}/phones`)
+})
