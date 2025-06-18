@@ -47,3 +47,15 @@ try{
 }
 });
 
+app.post('/phones', (req,res)=>{
+
+    try{
+        const newPhone = req.body;
+        TelekomPhones.push(newPhone);
+        res.status(200).json(newpPhone);
+    }
+    catch{
+        console.error("hiba történt");
+        res.status(500);
+    }
+});
