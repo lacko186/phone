@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to right, black,  red,  purple, blue, white);
+    background-size: conver;
+    background-repeat: no-repeat;
+}
+#phone{
+    max-width: 100px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.card{
+margin-left: 50px;
+margin-right: 20px;
+border-radius: 20%;
+}
+
+#érdekel{
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+#érdekel:hover
+{
+    background: linear-gradient(to left, darkred, black );
+    color: white;
+}
+
+#price{
+    font-weight: bold;
+    color: white;
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+h5{
+    font-weight: bold;
+}
