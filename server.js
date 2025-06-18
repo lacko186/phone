@@ -37,4 +37,13 @@ let TelekomPhones =
 
 ];
 
+app.get("/phones", (req,res)=>{
+try{
+    res.json(TelekomPhone);
+    res.status(200);
+}catch(err){
+    console.error("adatbetöltési hiba");
+    res.status(400);
+}
+});
 
