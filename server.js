@@ -39,7 +39,7 @@ let TelekomPhones =
 
 app.get("/phones", (req,res)=>{
 try{
-    res.json(TelekomPhone);
+    res.json(TelekomPhones);
     res.status(200);
 }catch(err){
     console.error("adatbetöltési hiba", err);
