@@ -1,0 +1,40 @@
+const express = require("express");
+const cors = require("cors")
+const app = express();
+const port = 5000;
+
+
+let TelekomPhones =
+[
+    {
+        name: "Samsung galxy A55",
+        price: 120000,
+        storage: "128 GB",
+        color: "black",
+        support: 5
+    },
+    {
+        name: "OnePlus 7 pro",
+        price: 170000,
+        storage: "128 GB",
+        color: "black",
+        support: 2
+    },
+    {
+        name: "Iphone 14",
+        price: 400000,
+        storage: "64 GB",
+        color: "white",
+        support: 3
+    },
+    {
+        name: "Xiaomi Redmi note 8",
+        price: 120000,
+        storage: "128 GB",
+        color: "black",
+        support: 5
+    }
+
+];
+
+
