@@ -8,51 +8,104 @@
     <title>Phones</title>
 </head>
 <body>
-    <h1 class="text-center mt-4">Telefonok</h1>
-
+    <h1 class="text-center mt-4 text-white fw-bold">Telefonok</h1>
 <div class="container text-center">
-<p class="text-primary text-center mt-4 fw-bold">Vásárolj magadnak egy új okostelefont!</p>
+<p class="text-white text-center mt-4 fw-bold">Vásárolj magadnak egy új okostelefont!</p>
  </div>
 
+ <center><div class="col-md-3 bg-white shadow rounded">
+<div class="fw-bold text-center">
+  <h3>Üdvözlünk a ShopPhone weboldalán</h3>
+  <p>nézz szét kínálatunkban</p>
+  <p>Válaszd ki a hozzád legjobban illőt</p>
+  <p>Ne tétovázz, részletre is elviheted</p>
+  <p>Kínálunkban megtalálható legkompaktabb készülékek</p>
+  <p>Vedd meg még ma!</p>
+</div>
+</center>
+ </div>
 <div class="card-group ">
   <div class="card bg-dark text-white">
-    <img id="phone" src="app.png" class="card-img-top" alt="...">
+    <img id="phone1" src="app.png" class="card-img-top" alt="SAMSUNG">
     <div class="card-body">
-      <h5 class="card-title text text-center ">Card title</h5>
-      <p class="card-text text-center ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p  id="price" class="card-text text-center ">Ár: 100000 Ft</p>
+      <h5 id="name1" class="card-title text text-center "></h5>
+      <p id="desc1" class="card-text text-center "></p>
+      <p id="price1" class="card-text text-center "></p>
     <center><button id="érdekel" href="#" class=" p-2 fw-bold">Érdekel</button></center>
     </div>
   </div>
   <div class="card bg-dark text-white">
-    <img id="phone" src="app.png" class="card-img-top" alt="...">
+    <img id="phone2" src="app.png" class="card-img-top" alt="Oneplus">
     <div class="card-body">
-      <h5 class="card-title text text-center ">Card title</h5>
-      <p class="card-text text-center ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p  id="price" class="card-text text-center ">Ár: 100000 Ft</p>
+      <h5 id="name2" class="card-title text text-center "></h5>
+      <p id="desc2" class="card-text text-center "></p>
+      <p id="price2" class="card-text text-center "></p>
     <center><button id="érdekel" href="#" class=" p-2 fw-bold">Érdekel</button></center>
     </div>
   </div>
   <div class="card bg-dark text-white">
-    <img id="phone" src="app.png" class="card-img-top" alt="...">
+    <img id="phone3" src="app.png" class="card-img-top" alt="Iphone">
     <div class="card-body">
-      <h5 class="card-title text text-center ">Card title</h5>
-      <p class="card-text text-center ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p  id="price" class="card-text text-center ">Ár: 100000 Ft</p>
+      <h5 id="name3" class="card-title text text-center "></h5>
+      <p id="desc3" class="card-text text-center "></p>
+      <p id="price3" class="card-text text-center "></p>
     <center><button id="érdekel" href="#" class=" p-2 fw-bold">Érdekel</button></center>
     </div>
   </div>
   <div class="card bg-dark text-white">
-    <img id="phone" src="app.png" class="card-img-top" alt="...">
+    <img id="phone4" src="app.png" class="card-img-top" alt="Xiaomi">
     <div class="card-body">
-      <h5 class="card-title text text-center ">Card title</h5>
-      <p class="card-text text-center ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p  id="price" class="card-text text-center ">Ár: 100000 Ft</p>
+      <h5 id="name4" class="card-title text text-center "></h5>
+      <p id="desc4" class="card-text text-center "></p>
+      <p id="price4" class="card-text text-center "></p>
     <center><button id="érdekel" href="#" class=" p-2 fw-bold">Érdekel</button></center>
     </div>
   </div>
 </div>
+<script>
+let TelekomPhones = [
+    {
+        name: "Samsung Galaxy A55",
+        price: 120000,
+        storage: "128 GB",
+        color: "black",
+        support: 5
+    },
+    {
+        name: "OnePlus 7 Pro",
+        price: 170000,
+        storage: "128 GB",
+        color: "black",
+        support: 2
+    },
+    {
+        name: "iPhone 14",
+        price: 400000,
+        storage: "64 GB",
+        color: "white",
+        support: 3
+    },
+    {
+        name: "Xiaomi Redmi Note 8",
+        price: 120000,
+        storage: "128 GB",
+        color: "black",
+        support: 5
+    }
+];
 
-
+for (let i = 0; i < TelekomPhones.length; i++) {
+    const phone = TelekomPhones[i];
+    const cardNumber = i + 1;
+    
+    const nameElement = document.getElementById("name" + cardNumber);
+    const priceElement = document.getElementById("price" + cardNumber);
+    const descElement = document.getElementById("desc" + cardNumber);
+    
+    nameElement.innerHTML = phone.name;
+    priceElement.innerHTML = "Ár: " + phone.price + " Ft";
+    descElement.innerHTML = "Tárhely: " + phone.storage + " | Szín: " + phone.color + " | Támogatás: " + phone.support + " év";
+}
+</script>
 </body>
 </html>

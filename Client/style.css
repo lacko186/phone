@@ -11,7 +11,6 @@ body{
 .card{
 margin-left: 50px;
 margin-right: 20px;
-border-radius: 20%;
 }
 
 #érdekel{
@@ -21,8 +20,7 @@ border-radius: 20%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 }
-#érdekel:hover
-{
+#érdekel:hover{
     background: linear-gradient(to left, darkred, black );
     color: white;
 }
